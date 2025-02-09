@@ -1,0 +1,138 @@
+/* @import url("./Tajawal/OFL.txt");
+@import url("./Tajawal/Tajawal-Black.ttf");
+@import url("./Tajawal/Tajawal-Bold.ttf");
+@import url("./Tajawal/Tajawal-ExtraBold.ttf");
+@import url("./Tajawal/Tajawal-ExtraLight.ttf");
+@import url("./Tajawal/Tajawal-Light.ttf");
+@import url("./Tajawal/Tajawal-Medium.ttf");
+@import url("./Tajawal/Tajawal-Regular.ttf"); */
+
+@font-face{
+    src: url("./Tajawal/OFL.txt");
+    src: url("./Tajawal/Tajawal-Black.ttf");
+    src: url("./Tajawal/Tajawal-Bold.ttf");
+    src: url("./Tajawal/Tajawal-ExtraBold.ttf");
+    src: url("./Tajawal/Tajawal-ExtraLight.ttf");
+    src: url("./Tajawal/Tajawal-Light.ttf");
+    src: url("./Tajawal/Tajawal-Medium.ttf");
+    src: url("./Tajawal/Tajawal-Regular.ttf");
+    font-family: tajawal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  tajawal, serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+html{
+    background: #fff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 15px;
+    background: #fff;
+    
+    box-shadow: 0px 0px 15px 1px rgba(1 1 1 /15%);
+}
+
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ul li {
+    margin: 0 10px;
+    list-style: none;    
+}
+
+ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+ul li a:hover{
+    border-bottom: 3px solid;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, 50%);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text strong{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.text .btn{
+    width: 100%;
+}
+
+
+.text .btn button{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: none;
+    background: #222;
+
+}
+
+.text .btn button a{
+    display: block;
+    height:100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #222;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    padding: 10px;
+}
+
+footer span{
+    margin: 15px;
+}
+
